@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
-import './App.css';
-import './Eightball.js';
+import "./App.css";
+import Eightball from "./Eightball";
 
 const eightballAnswers = [
   { msg: "It is certain.", color: "green" },
@@ -25,14 +25,13 @@ const eightballAnswers = [
   { msg: "Very doubtful.", color: "red" },
 ];
 
-
 function App() {
   return (
     <div className="App">
-      <Eightball />
+      <Eightball eightballAnswers={ eightballAnswers }/>
     </div>
   );
 }
 
 export default App;
-export { eightballAnswers };
+//export { eightballAnswers };
